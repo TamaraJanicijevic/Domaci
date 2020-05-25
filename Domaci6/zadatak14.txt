@@ -1,0 +1,15 @@
+14. Kreirati aplikaciju koji će imati korisnički interfejs kao što je dato na slici i sledeću funkcionalnost:
+• Pritiskom na dugme Unesi, unete podatke o osobi treba smeštati u kolekciju osoba, a pritikom
+na dugme Ponisti treba da se poništi unos u gornja 2 tekstualna polja za ime i prezime i godište.
+a) U prvo od ovih polja ime i prezime unose se razdvojeni jednim ili većim brojem razmaka.
+b) U slučaju da nije ispravno uneto ime i prezime u polje za unos imena i prezimena OBAVEZNO
+upisati "Neispravan unos!", a ukoliko je neispravno uneto godište u polje za unos imena i
+prezimena upisati "Neispravno godiste!"
+• Pritiskom na dugme Sortiraj i ispiši rezultat treba sortirati podatke o unetim osobama po
+kriterijumu izabranom radio dugmetom sa labelama: "po prezimenu i imenu" i "po godinama
+starosti, rastuće", i odgovarajuće rezultate ispisati u polje za unos teksta (u kome je onemogućen
+unos a koje po potrebi može da se scroll-uje) u sledećem formatu:
+a) "ime i prezime:" i "godiste"
+b) U prvi red podatke o osobi koja je prva u kolekciji sortiranoj po izabranom kriterijumu, a u
+donje polje čitavu kolekciju sortiranu po izabranom kriterijumu, i to podatke o svakoj osobi
+u posebnom redu.

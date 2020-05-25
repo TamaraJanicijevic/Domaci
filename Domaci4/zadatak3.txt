@@ -1,0 +1,11 @@
+3. Kreirati aplikaciju koji će imati korisnički interfejs kao što je dato na slici i sledeću funkcionalnost:
+a) Selektovanjem opcije Način prikaza aplikacija treba da u donjem delu (bela površina) ispisuje
+vrednosti unetih polja ličnih podataka u jednom od sledećih formata:
+• Ime
+• Prezime
+• Ime i prezime
+• Prezime i ime
+• Nadimak
+b) Pritiskom na dugme Dodaj se obavlja akcija dodavanje elemenata u listu .
+c) Pritiskom na dugme Izbaci se obavlja akcija brisanjaelmenata iz liste.
+d) Pritiskom na dugme Izmeni se obavlja akcija izmene sadržaja elemenata iz liste.

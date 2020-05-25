@@ -1,0 +1,24 @@
+a) Klasa KoncertnaDvorana koja ima:
+ Statičku konstantu KAPACITET koja ima vrednost 300.
+ Atribut koji predstavlja niz sedišta u dvorani. Svako sedište može da bude slobodno ili zauzeto.
+Akoje slobodno, vrednost odgovarajućeg elementa niza je TRUE, a ako je zauzeto, onda je FALSE.
+Koncertna dvorana ima tačno onoliko sedišta kolika je vrednost konstante KAPACITET. Odmah
+inicijalizovati niz.
+ Konstruktor koji postavlja vrednost svih sedišta iz niza na slobodna.
+ Metodu koja uvodi gledaoca na sedište. Broj sedišta je dat kao ulazni argument metode (unose
+se brojevi od 1 do 300) . Prvo se proverava da li je broj sedišta u granicama i da li je sedište već
+zauzeto pa, ako je sve u redu, sedište postaje zauzeto i ispisuje se poruka na ekranu da je
+gledalac uveden. Ako je sedište već bilo zauzeto ili broj sedišta nije u granicama, ispisuje se
+poruka o grešci.
+ Metodu koja proverava da li je dvorana dovoljno popunjena da bi se koncert isplatio i vraća
+TRUE ako jeste, a u suprotnom FALSE. Dvorana je dovoljno popunjena ako su ispunjena tri
+uslova: procenat zauzetosti sedišta iz prve polovine dvorane (prvih 150 sedišta) je veći od 50%,
+procenat zauzetosti sedišta iz druge polovine dvorane (ostalih 150 sedišta) je veći od 40% i
+procenat zauzetosti sedišta iz cele dvorane je veći od 55%.
+ Metodu koja na ekranu ispisuje koliko ima slobodnih sedišta u svakom redu dvorane. Zna se da
+su svi redovi iste veličine i da sadrže tačno po 10 sedišta. Prema tome, prvih 10 sedišta iz niza su
+zapravo u prvom redu, sledećih 10 sedišta u drugom redu itd. Ispis bi trebalo da bude u formatu:
+„U redu br. __ ima __ slobodnih sedišta“.
+b) Klasa TestKoncertnaDvorana koja kreira jedan objekat klase KoncetnaDvorana i uvodi gledaoce na
+sedišta broj 21, 23 i 24. Onda je na ekranu potrebno ispisati poruku o tome da li je dvorana dovoljno
+popunjena da bi se koncert isplatio.

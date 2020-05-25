@@ -1,0 +1,6 @@
+Kreirati klasu pod nazivom ImePrezime sa odgovarajućim atributima i metodama za učitavanje
+stringa i ispisivanje znaka sa najvećim brojem ponavljanja u unetom stringu. Ako postoji više takvih
+znakova, priznaje se bilo koji od njih. Uneti string ima bar jedan znak različit od praznine. Velika i
+mala slova su različiti znakovi.U klasi pod nazivom GlavnaKlasa, a u okviru main metode, po potrebi
+pozivati odgovarajuće atribute i metode iz klase ImePrezime radi ispunjenja uslova zadatka i
+uspešnog izvršenja programskog koda.

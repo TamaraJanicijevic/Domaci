@@ -1,0 +1,58 @@
+Napraviti javne klase KucniAparatException, KucniAparat, Televizor, Radio i WriteKucniAparat sa
+sledećim uslovima:
+a) Klasa KucniAparatException predstavlja neproveravani izuzetak (nasleđuje klasu
+RuntimeException) i ima:
+• Javni konstruktor koji kao parametar prima poruku greške i poziva odgovarajući konstruktor
+nadklase prosleđujući mu parametar.
+b) Klasa KucniAparat ima:
+• Atribut marka koji predstavlja ime proizvođača aparata.
+• Atribut model koji predstavlja naziv modela aparata.
+• Atribut ukljucen koji ima vrednost TRUE ako je aparat uključen, a u suprotnom FALSE.
+• Konstruktor koji kao ulazne argumente prima vrednosti za marku, model i ukljucen (true ili false)
+i dodeljuje ih atributima. Dodeljivanje se vrši isključivo ako su unete vrednosti za marku i model
+različiti od null, a u slučaju unosa nedozvoljenih vrednosti, baciti izuzetak klase
+KucniAparatException sa odgovarajućom porukom. 
+• Odgovarajuće get i set metode za atribute marka i model. Nedozvoljene vrednosti za atribute
+marka i model su Stringovi koji imaju vrednost null. U slučaju unosa nedozvoljenih vrednosti,
+baciti izuzetak klase KucniAparatException sa odgovarajućom porukom.
+• Metodu ukljuci koja ukljucuje aparat tj. postavlja vrednost atributa ukljucen na TRUE.
+• Metodu iskljuci koja iskljucuje aparat tj. postavlja vrednost atributa ukljucen na FALSE.
+• Metodu ispisi koja primenom klase PrintWriter upisuje podatke o marki i modelu aparata kao i
+to da li je aparat uključen u tekstualni fajl “marka_model.txt”.
+c) Klasa Televizor koja nasleđuje klasu KucniAparat i ima:
+• Atribut program koji predstavlja broj programa koji se trenutno prikazuje. Početna vrednost za
+atribut program je 1.
+• Konstruktor koji kao ulazne argumente prima vrednosti za marku, model, ukljucen (true ili false)
+i program i dodeljuje ih atributima. Dodeljivanje se vrši isključivo ako su unete vrednosti za
+marku i model različiti od null i ako je broj programa između 1 i 40, a u slučaju unosa
+nedozvoljenih vrednosti, baciti izuzetak klase KucniAparatException sa odgovarajućom
+porukom.
+• Metodu promeniProgramNavise koja menja program na sledeći. Ako se na televizoru već pušta
+40. program, program dobija vrednost 1.
+• Metodu promeniProgramNanize koja menja program na prethodni. Ako se na televizoru već
+pušta 1. program, program dobija vrednost 40.
+• Metodu ispisi koja, pored poruke o marki, modelu i tome da li je uključen, primenom klase
+PrintWriter upisuje podatke u tekstualni fajl “televizor.txt” o tome koji program se trenutno
+prikazuje.
+d) Klasa Radio koja nasleđuje klasu KucniAparat i ima:
+• Atribut frekvencija koji predstavlja trenutnu frekvenciju koju pušta radio aparat (npr. 87,5).
+Početna vrednost za ovaj atribut je 87.5.
+• Konstruktor koji kao ulazne argumente prima vrednosti za marku, model, ukljucen (true ili false)
+i frekvenciju i dodeljuje ih atributima. Dodeljivanje se vrši isključivo ako su unete vrednosti za
+marku i model različiti od null i ako je frekvencija između 87.5 i 108.0, a u slučaju unosa
+nedozvoljenih vrednosti, baciti izuzetak klase KucniAparatException sa odgovarajućom
+porukom.
+• Odgovarajuće get i set metode za atribut frekvencija. Pri unosu nove vrednosti za atribut
+frekvencija proveriti da li je nova vrednost u opsegu 87.5 – 108.0. U slučaju unosa nedozvoljenih
+vrednosti, baciti izuzetak klase KucniAparatException sa odgovarajućom porukom.
+• Redefinisati metodu ispisi klase KucniAparat tako da, ako je radio uključen, primenom klase
+PrintWriter upisuje se podatak u tekstualni fajl “radio.txt” o frekvenciji koju radio pušta. Ako je
+radio isključen, primenom klase PrintWriter upisuje se podatak u tekstualni fajl “radio.txt” o
+tome da je isključen. Ni u jednom ni u drugom slučaju ne treba upisivati podatake o marki i
+modelu radija.
+e) Klasa WriteKucniAparat koja kreira po jedan objekat klase KucniAparat, Televizor i Radio. Kucni
+aparat je marke Philips, model SQ2 i uključen je. Televizor je LG, model LT33, isključen je i pušta 2.
+program. Radio je marke Sony, model SR, isključen je i pušta radio stanicu na frekvenciji 88.9.
+Isključiti kućni aparat, uključiti televizor i podesiti ga na 3. program, i uključiti radio i podesiti ga na
+frekvenciju 105.6. Koristeći klasu PrintWriter upisati podatke o sva tri uređaja u tekstualni fajl
+“kucniAparati.txt”.

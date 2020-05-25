@@ -1,0 +1,2 @@
+Kreirati klasu sa odgovarajućim atributima i metodama koja u okviru main metode pronalazi i
+štampa prvi broj deljiv brojem n, počevši od unetog celog broja x.
